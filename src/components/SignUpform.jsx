@@ -10,7 +10,7 @@ const SignUpform = () => {
     let navigate = useNavigate()
     const handlesubmit = (e) => {
         e.preventDefault() 
-        axios.post('http://localhost:3000/register',{uname,email,password,address})
+        axios.post('https://gourmatgardenm.vercel.app/register',{uname,email,password,address})
         .then(result=>{console.log(result)
             navigate('/')
         })
