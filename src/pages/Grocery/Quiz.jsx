@@ -23,7 +23,7 @@ export const Quiz = () => {
   useEffect(() => {
     const fetchQuestions = async () => {
       try {
-        const response = await axios.get('http://localhost:3000/api/quiz-questions');
+        const response = await axios.get('https://gourmatgardenm.vercel.app/api/quiz-questions');
         setQuestions(response.data.results);
       } catch (error) {
         console.error("Error fetching quiz questions:", error);
