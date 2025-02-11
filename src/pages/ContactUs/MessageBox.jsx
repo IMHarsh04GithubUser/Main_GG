@@ -18,7 +18,7 @@ const MessageBox1 = () => {
     }
 
     axios
-      .post("http://localhost:3000/message", { name, email, phone, message })
+      .post("https://gourmatgardenm.vercel.app/message", { name, email, phone, message })
       .then((result) => {
         console.log(result);
         alert("Thank You For Your FeedBack");
